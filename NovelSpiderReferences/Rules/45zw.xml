@@ -1,0 +1,316 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>关关定制规则
+夏日☆QQ：251391983
+淘宝地址：http://xiarivps.taobao.com/</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>关关定制规则
+夏日☆QQ：251391983
+淘宝地址：http://xiarivps.taobao.com/</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>45zw</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.45zw.com/</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.45zw.com/modules/article/search.php</Pattern>
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;td class="odd"&gt;&lt;a href="http://www.45zw.com/book/(.+?)/"&gt;(.+?)&lt;/a&gt;&lt;/td&gt;</Pattern>
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>http://www.45zw.com/all.html</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li&gt;&lt;a href="http://www.45zw.com/book/(.+?)/" target="_blank"&gt;(.+?)&lt;/a&gt;.+?&lt;/li&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.45zw.com/book/{NovelKey}/</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>未找到该编号的书籍信息</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;h1&gt;(.+?)&lt;/h1&gt;</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern>&amp;nbsp;
+</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="author"&gt;作者：(.+?)&lt;/div&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>分 类：&lt;span class="pd_r"&gt;(.+?)&lt;/span&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>分 类：&lt;span class="pd_r"&gt;(.+?)&lt;/span&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;script.+?/script&gt;
+&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/table&gt;
+ header
+&amp;nbsp;
+&lt;br /&gt;
+&lt;a href=.+?;"&gt;
+&lt;/a&gt;
+&lt;/li&gt;
+&lt;br/&gt;
+&lt;span&gt;
+&amp;lt;
+/span
+&amp;gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;tr&gt;
+&amp;amp;
+gt;
+a href=.*a</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="bookintro"&gt;((.|\n)*)&lt;div class="new"&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>状 态：&lt;span class="pd_r"&gt;(.+?)&lt;/span&gt;</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;img alt=".+?" src="(.+?)" width="160" height="206" /&gt;&lt;/a&gt;</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="reader"&gt;\s*&lt;a href="http://www.45zw.com/(.+?)/" title="(.+?)"&gt;&lt;/a&gt;\s*&lt;/div&gt;</Pattern>
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.45zw.com/{NovelPubKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>该页面正在努力生成中</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;li class="fj"&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;li&gt;&lt;a href="http://www.45zw.com/.+?.html" title="(.+?)"&gt;(.+?)&lt;/a&gt;&lt;/li&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;li&gt;&lt;a href="http://www.45zw.com/(.+?).html" title="(.+?)"&gt;(.+?)&lt;/a&gt;&lt;/li&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.45zw.com/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>该页面正在努力生成中</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubContent_GetTextKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContent_GetTextKey</RegexName>
+  </PubContent_GetTextKey>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>&lt;font color='.+?'&gt;.+?&lt;/font&gt;
+&lt;/div&gt;
+&amp;spades;
+&lt;script&gt;.+?&lt;/script&gt;
+&lt;SCRIPT\s*.+?&lt;/SCRIPT&gt;
+www.92txt.net 就爱网
+www.92txt.net
+就爱网
+书迷楼最快更新
+请收藏书迷楼
+www.shumilou.com
+tXT下载WWW.XSHUOtXt.Com
+&lt;a.*&lt;/a&gt;
+w.*t
+记住本站网址.+?方便下次阅读，或且百度输入.+?就能进入本站 		
+Ｗｗｗ．XS52．Ｃｏｍ</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div class="ad250left"&gt;((.|\n)*)&lt;div class="adsgg"&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div.+?&gt;♂ 
+wap♂ 
+http://♂
+&amp;nbsp;♂
+【求一下收藏和推荐】♂
+请记住我们的地址♂
+&lt;a href='.+?&lt;/a&gt;♂
+www.+?.com♂
+小说章节更新最快♂
+W.+?M♂
+w.+?m♂
+(小说WWW.+?s)♂
+看更新最快的大主宰最新章节W♂
+看更新最快的.+?最新章节♂
+&lt;TBODY\s*.+?&lt;/TABLE&gt;♂</Pattern>
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentImages>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;[^&lt;]*((?&lt;=&lt;(?:img|IMG)[^&gt;]*(?:(?:src|SRC)(?:\s*=\s*(?:["']?))))(?:[^\s"'&gt;]*)\.(?:jpg|gif|jpeg|bmp|png|GIF|JPG))[^&gt;]*&gt;</Pattern>
+    <RegexName>PubContentImages</RegexName>
+  </PubContentImages>
+</RuleConfigInfo>

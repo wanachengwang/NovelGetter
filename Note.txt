@@ -1,0 +1,2 @@
+1.ToLower
+2.ERRORTEXT='ÒÑÐÞ¸´' ERRORTEXT='Î´ÐÞ¸´'

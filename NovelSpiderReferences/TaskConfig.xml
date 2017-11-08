@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<TaskConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <ReplaceChapterNameOn>false</ReplaceChapterNameOn>
+  <ChapterUrlWait>10</ChapterUrlWait>
+  <CheckRepeat>true</CheckRepeat>
+  <CheckVolume>false</CheckVolume>
+  <CompulsoryDeleteChapter>false</CompulsoryDeleteChapter>
+  <DelChapter>false</DelChapter>
+  <DeleteChapter>false</DeleteChapter>
+  <DonnotCollectLastChapterNo>0</DonnotCollectLastChapterNo>
+  <GoRepeatChapter>0</GoRepeatChapter>
+  <EmptyChapter>0</EmptyChapter>
+  <EqualsChapter>0</EqualsChapter>
+  <FilterChapterName>
+    <string>章节</string>
+    <string>章节1</string>
+    <string>章节2</string>
+  </FilterChapterName>
+  <FilterContinueChapterName>
+    <string>章节11</string>
+    <string>章节111</string>
+    <string>章节211</string>
+  </FilterContinueChapterName>
+  <FilterContinueVolume>
+    <string>正文</string>
+    <string>章节目录</string>
+  </FilterContinueVolume>
+  <FilterFinish>true</FilterFinish>
+  <FilterNovel>
+    <string />
+  </FilterNovel>
+  <FilterNovelType>0</FilterNovelType>
+  <FilterVolume>
+    <string />
+  </FilterVolume>
+  <FindMaxChapterNum>10000</FindMaxChapterNum>
+  <Finish>false</Finish>
+  <GetListUrl>
+    <string>http://www.23wx.com/</string>
+  </GetListUrl>
+  <GetOrderMaxId>1000</GetOrderMaxId>
+  <GetOrderMinId>100</GetOrderMinId>
+  <GetSinceId>
+    <string>45658</string>
+  </GetSinceId>
+  <Hidebook>false</Hidebook>
+  <ID>F17CCC63-7887-4912-B81F-A4222CA5123E</ID>
+  <IndexUrlWait>0</IndexUrlWait>
+  <Interval>10</Interval>
+  <Log>true</Log>
+  <MinChapterNum>0</MinChapterNum>
+  <MinChapterTextLength>0</MinChapterTextLength>
+  <NameAndAuthor>true</NameAndAuthor>
+  <NewBook>true</NewBook>
+  <NoPBar>true</NoPBar>
+  <NovelUrlWait>0</NovelUrlWait>
+  <OldBook>true</OldBook>
+  <OnlyReplaceSort>true</OnlyReplaceSort>
+  <OnlyText>true</OnlyText>
+  <OrderChapter>0</OrderChapter>
+  <OtherEncoding>gb2312</OtherEncoding>
+  <OtherListUrl>http://www.qidian.com/Book/NewVipBookChapterList.aspx</OtherListUrl>
+  <OtherRegex>bs\[\d*\] = new Book\('\d*','(.+?)','\d*'</OtherRegex>
+  <ProhibitionVolume>false</ProhibitionVolume>
+  <Proxy>false</Proxy>
+  <ProxyDomain />
+  <ProxyHost>222.186.13.11</ProxyHost>
+  <ProxyPassword />
+  <ProxyPort>9238</ProxyPort>
+  <ProxyUser />
+  <PutOrderMaxId>0</PutOrderMaxId>
+  <PutOrderMinId>0</PutOrderMinId>
+  <PutSinceId>
+    <string />
+  </PutSinceId>
+  <RadioBy>GetListUrl</RadioBy>
+  <RepeatChapter>0</RepeatChapter>
+  <RepeatChapterHandle>0</RepeatChapterHandle>
+  <ReplaceChapter>false</ReplaceChapter>
+  <ReplaceChapterNun>0</ReplaceChapterNun>
+  <ReplaceFullflag>true</ReplaceFullflag>
+  <ReplaceImgflag>true</ReplaceImgflag>
+  <ReplaceIntro>true</ReplaceIntro>
+  <ReplaceSort>true</ReplaceSort>
+  <ReplaceSortId>0</ReplaceSortId>
+  <RuleFile>Rules\23wx.com.xml</RuleFile>
+  <StrongReplaceFullflag>false</StrongReplaceFullflag>
+  <StrongReplaceImgflag>false</StrongReplaceImgflag>
+  <StrongReplaceIntro>false</StrongReplaceIntro>
+  <Timing>true</Timing>
+  <Typesetting>true</Typesetting>
+  <UpdateDefault>false</UpdateDefault>
+</TaskConfigInfo>
