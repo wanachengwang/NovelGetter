@@ -1802,14 +1802,14 @@ namespace NovelSpider
 			this.toolStrip_0.Size = new System.Drawing.Size(834, 39);
 			this.toolStrip_0.TabIndex = 0;
 			this.toolStrip_0.Text = Localization.Get("工具栏");
-			this.toolStripButton_0.Font = new System.Drawing.Font(Localization.Get("宋体"), 10.5f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.toolStripButton_0.Font = new System.Drawing.Font(Localization.Font, 10.5f, FontStyle.Regular, GraphicsUnit.Point, 0);
 			this.toolStripButton_0.Image = (Image)componentResourceManager.GetObject("toolStripButton_0.Image");
 			this.toolStripButton_0.ImageTransparentColor = Color.Magenta;
 			this.toolStripButton_0.Name = "toolStripButton_0";
 			this.toolStripButton_0.Size = new System.Drawing.Size(99, 36);
 			this.toolStripButton_0.Text = Localization.Get("单本载入");
 			this.toolStripButton_0.Click += new EventHandler(this.toolStripButton_0_Click);
-			this.toolStripButton_1.Font = new System.Drawing.Font(Localization.Get("宋体"), 10.5f, FontStyle.Regular, GraphicsUnit.Point, 0);
+			this.toolStripButton_1.Font = new System.Drawing.Font(Localization.Font, 10.5f, FontStyle.Regular, GraphicsUnit.Point, 0);
 			this.toolStripButton_1.Image = (Image)componentResourceManager.GetObject("toolStripButton_1.Image");
 			this.toolStripButton_1.ImageTransparentColor = Color.Magenta;
 			this.toolStripButton_1.Name = "toolStripButton_1";
@@ -2481,7 +2481,7 @@ namespace NovelSpider
 			this.chapterTXTBox.Size = new System.Drawing.Size(660, 84);
 			this.chapterTXTBox.TabIndex = 3;
 			this.label5.AutoSize = true;
-			this.label5.Font = new System.Drawing.Font(Localization.Get("宋体"), 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
+			this.label5.Font = new System.Drawing.Font(Localization.Font, 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
 			this.label5.ForeColor = Color.Orange;
 			this.label5.Location = new Point(457, 10);
 			this.label5.Name = "label5";
@@ -2489,7 +2489,7 @@ namespace NovelSpider
 			this.label5.TabIndex = 6;
 			this.label5.Text = "▆";
 			this.label6.AutoSize = true;
-			this.label6.Font = new System.Drawing.Font(Localization.Get("宋体"), 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
+			this.label6.Font = new System.Drawing.Font(Localization.Font, 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
 			this.label6.ForeColor = Color.SeaGreen;
 			this.label6.Location = new Point(547, 10);
 			this.label6.Name = "label6";
@@ -2497,7 +2497,7 @@ namespace NovelSpider
 			this.label6.TabIndex = 6;
 			this.label6.Text = "▆";
 			this.label7.AutoSize = true;
-			this.label7.Font = new System.Drawing.Font(Localization.Get("宋体"), 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
+			this.label7.Font = new System.Drawing.Font(Localization.Font, 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
 			this.label7.ForeColor = Color.Red;
 			this.label7.Location = new Point(739, 10);
 			this.label7.Name = "label7";
@@ -2505,7 +2505,7 @@ namespace NovelSpider
 			this.label7.TabIndex = 6;
 			this.label7.Text = "▆";
 			this.label8.AutoSize = true;
-			this.label8.Font = new System.Drawing.Font(Localization.Get("宋体"), 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
+			this.label8.Font = new System.Drawing.Font(Localization.Font, 12f, FontStyle.Bold, GraphicsUnit.Point, 134);
 			this.label8.ForeColor = Color.DeepPink;
 			this.label8.Location = new Point(643, 10);
 			this.label8.Name = "label8";
@@ -2553,7 +2553,7 @@ namespace NovelSpider
 			base.Controls.Add(this.splitContainer_0);
 			base.Controls.Add(this.statusStrip_0);
 			base.Controls.Add(this.toolStrip_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "CollectManual";
 			this.Text = Localization.Get("手动控制");

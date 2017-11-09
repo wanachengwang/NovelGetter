@@ -62,20 +62,25 @@ namespace NovelSpider
 			this.label_0.Text = Localization.Get("本软件只为替代用户重复手工劳动。严禁用于非法转载。");
             
             System.Drawing.Text.InstalledFontCollection fonts = new System.Drawing.Text.InstalledFontCollection();
+            bool bPrevFontExist = false;
             foreach (System.Drawing.FontFamily ff in fonts.Families) {
                 this.comboFontSelect.Items.Add(ff.Name);
+                if (!bPrevFontExist && ff.Name == Localization.Font)
+                    bPrevFontExist = true;
             }
             this.comboFontSelect.Location = new Point(12, 30);
             this.comboFontSelect.Name = "combo_fontselect";
             this.comboFontSelect.Size = new System.Drawing.Size(150, 12);
             this.comboFontSelect.TabIndex = 1;
-            this.comboFontSelect.Text = fonts.Families[0].Name;
+            this.comboFontSelect.Text = Localization.Font;
 
             this.btnFontSelect.Location = new Point(180, 30);
             this.btnFontSelect.Name = "btn_fontselect";
             this.btnFontSelect.Size = new System.Drawing.Size(80, 20);
             this.btnFontSelect.TabIndex = 2;
             this.btnFontSelect.Text = "OK";
+            this.btnFontSelect.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Bold, GraphicsUnit.Point, 134);
+            this.btnFontSelect.Click += (a, b) => Localization.Font = this.comboFontSelect.Text;
 
             this.webBwr.Dock = DockStyle.Fill;
 			this.webBwr.Location = new Point(0, 54);
@@ -86,7 +91,7 @@ namespace NovelSpider
 			base.ClientSize = new System.Drawing.Size(584, 316);
 			base.Controls.Add(this.webBwr);
 			base.Controls.Add(this.panel_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "WelcomeForm";
 			base.StartPosition = FormStartPosition.CenterScreen;

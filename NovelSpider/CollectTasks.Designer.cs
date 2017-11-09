@@ -40,7 +40,7 @@ namespace NovelSpider
 			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(CollectTasks));
 			base.SuspendLayout();
 			base.ClientSize = new System.Drawing.Size(284, 262);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "CollectTasks";
 			base.ResumeLayout(false);
@@ -93,7 +93,7 @@ namespace NovelSpider
 			base.Controls.Add(this.label1);
 			base.Controls.Add(this.maskedTextBox1);
 			base.Controls.Add(this.button1);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "CollectTasks";
 			this.Text = Localization.Get("章节内容");

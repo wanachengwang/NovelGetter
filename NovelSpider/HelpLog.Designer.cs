@@ -164,7 +164,7 @@ namespace NovelSpider
 			base.Controls.Add(this.comboBox_1);
 			base.Controls.Add(this.comboBox_0);
 			base.Controls.Add(this.dataGridView_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "HelpLog";
 			this.Text = Localization.Get("查看日志");

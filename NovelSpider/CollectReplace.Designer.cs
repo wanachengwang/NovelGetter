@@ -1526,7 +1526,7 @@ namespace NovelSpider
 			base.Controls.Add(this.comboBox_0);
 			base.Controls.Add(this.button_0);
 			base.Controls.Add(this.button_1);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "CollectReplace";
 			this.Text = Localization.Get("超级修复模式");

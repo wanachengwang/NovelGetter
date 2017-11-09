@@ -667,7 +667,7 @@ namespace NovelSpider
 			base.Controls.Add(this.button_0);
 			base.Controls.Add(this.groupBox_1);
 			base.Controls.Add(this.groupBox_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "HelpDeleteNovel";
 			this.Text = Localization.Get("批量删除小说");

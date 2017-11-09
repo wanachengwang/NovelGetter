@@ -383,7 +383,7 @@ namespace NovelSpider
 			base.Controls.Add(this.button_0);
 			base.Controls.Add(this.comboBox_0);
 			base.Controls.Add(this.listBox_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "RuleForm";
 			this.Text = Localization.Get("规则管理器");

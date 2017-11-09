@@ -168,14 +168,14 @@ namespace NovelSpider
 			this.comboBox_4.Size = new System.Drawing.Size(180, 20);
 			this.comboBox_4.TabIndex = 52;
 			this.label_20.AutoSize = true;
-			this.label_20.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.label_20.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			this.label_20.Location = new Point(8, 15);
 			this.label_20.Name = "label_20";
 			this.label_20.Size = new System.Drawing.Size(65, 12);
 			this.label_20.TabIndex = 51;
 			this.label_20.Text = Localization.Get("采集方案：");
 			this.label_1.AutoSize = true;
-			this.label_1.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.label_1.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			this.label_1.Location = new Point(265, 15);
 			this.label_1.Name = "label_1";
 			this.label_1.Size = new System.Drawing.Size(65, 12);
@@ -249,7 +249,7 @@ namespace NovelSpider
 			base.Controls.Add(this.comboBox_0);
 			base.Controls.Add(this.radioButton_0);
 			base.Controls.Add(this.radioButton_1);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "TaskForm";
 			this.Text = Localization.Get("错误生成器");

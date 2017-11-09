@@ -207,7 +207,7 @@ namespace NovelSpider
 			base.Controls.Add(this.groupBox3);
 			base.Controls.Add(this.groupBox2);
 			base.Controls.Add(this.groupBox1);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "MysqlForm";
 			this.Text = Localization.Get("数据库维护");

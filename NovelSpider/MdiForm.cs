@@ -215,7 +215,8 @@ namespace NovelSpider
 			TabGradient gradientInactiveCaption = new TabGradient();
 			TabGradient transparent = new TabGradient();
 			this.MainMenu = new MenuStrip();
-			this.toolStripMenuItem_0 = new ToolStripMenuItem();
+            this.MainMenu.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Bold, GraphicsUnit.Point, 134);
+            this.toolStripMenuItem_0 = new ToolStripMenuItem();
 			this.toolStripMenuItem_1 = new ToolStripMenuItem();
 			this.toolStripMenuItem_2 = new ToolStripMenuItem();
 			this.toolStripMenuItem_3 = new ToolStripMenuItem();

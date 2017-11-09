@@ -74,9 +74,9 @@ namespace NovelSpider
 				}
 				try
 				{
-					NovelSpider.NativeMethods.FreeConsole();
+                    NovelSpider.NativeMethods.FreeConsole();
 					Application.EnableVisualStyles();
-					Application.SetCompatibleTextRenderingDefault(false);
+					Application.SetCompatibleTextRenderingDefault(true);
 					Class19.Q77LubhzKM3NS();
 					Application.Run(new MdiForm());
 				}

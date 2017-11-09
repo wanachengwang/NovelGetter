@@ -641,7 +641,7 @@ namespace NovelSpider
 			this.label1.TabIndex = 19;
 			this.label1.Text = Localization.Get("自定义ID(,分割)：");
 			this.label_11.AutoSize = true;
-			this.label_11.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.label_11.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			this.label_11.ForeColor = Color.Blue;
 			this.label_11.Location = new Point(6, 155);
 			this.label_11.Name = "label_11";
@@ -887,7 +887,7 @@ namespace NovelSpider
 			base.ClientSize = new System.Drawing.Size(579, 372);
 			base.Controls.Add(this.groupBox_1);
 			base.Controls.Add(this.groupBox_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "HelpBatchCreate";
 			this.Text = Localization.Get("批量生成");

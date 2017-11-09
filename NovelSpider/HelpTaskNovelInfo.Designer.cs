@@ -81,7 +81,7 @@ namespace NovelSpider
 			this.timer_0.Tick += new EventHandler(this.timer_0_Tick);
 			base.ClientSize = new System.Drawing.Size(452, 169);
 			base.Controls.Add(this.listView_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "HelpTaskNovelInfo";
 			base.ShowInTaskbar = false;

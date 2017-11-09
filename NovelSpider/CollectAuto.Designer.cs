@@ -2422,14 +2422,14 @@ namespace NovelSpider
 			this.comboBox_4.TabIndex = 32;
 			this.comboBox_4.SelectedIndexChanged += new EventHandler(this.comboBox_4_SelectedIndexChanged);
 			this.label_20.AutoSize = true;
-			this.label_20.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.label_20.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			this.label_20.Location = new Point(6, 9);
 			this.label_20.Name = "label_20";
 			this.label_20.Size = new System.Drawing.Size(65, 12);
 			this.label_20.TabIndex = 31;
 			this.label_20.Text = Localization.Get("采集方案：");
 			this.label_1.AutoSize = true;
-			this.label_1.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.label_1.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			this.label_1.Location = new Point(263, 9);
 			this.label_1.Name = "label_1";
 			this.label_1.Size = new System.Drawing.Size(65, 12);
@@ -2521,7 +2521,7 @@ namespace NovelSpider
 			base.Controls.Add(this.tabControl_0);
 			base.Controls.Add(this.button_2);
 			base.Controls.Add(this.button_0);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "CollectAuto";
 			base.ShowInTaskbar = false;

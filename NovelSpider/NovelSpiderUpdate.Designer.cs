@@ -220,10 +220,10 @@ namespace NovelSpider
 			base.Controls.Add(this.label1);
 			base.Controls.Add(this.pictureBox1);
 			base.Controls.Add(this.UpdateLog);
-			this.Font = new System.Drawing.Font(Localization.Get("宋体"), 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
+			this.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Regular, GraphicsUnit.Point, 134);
 			base.Icon = (System.Drawing.Icon)componentResourceManager.GetObject("$this.Icon");
 			base.Name = "NovelSpiderUpdate";
-			this.Text = "關關更新器";
+			this.Text = "超级更新器";
 			base.Load += new EventHandler(this.NovelSpiderUpdate_Load);
 			((ISupportInitialize)this.pictureBox1).EndInit();
 			base.ResumeLayout(false);
