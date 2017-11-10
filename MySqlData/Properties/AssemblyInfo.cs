@@ -9,8 +9,6 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyCopyright("Copyright 2004-2007, MySQL AB")]
 [assembly: AssemblyDelaySign(false)]
 [assembly: AssemblyDescription("ADO.Net driver for MySQL")]
-[assembly: AssemblyKeyFile("")]
-[assembly: AssemblyKeyName("ConnectorNet")]
 [assembly: AssemblyProduct("")]
 [assembly: AssemblyTitle("MySQL.Data.dll")]
 [assembly: AssemblyTrademark("")]

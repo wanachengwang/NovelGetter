@@ -554,7 +554,7 @@ namespace NovelSpider
 				str = "select VERSION()";
 				try
 				{
-					str = MySqlHelper.ExecuteScalar(Configs.BaseConfig.ConnectionString, CommandType.Text, str.ToString(), null).ToString();
+					str = MySql.Data.MySqlClient.MySqlHelper.ExecuteScalar(Configs.BaseConfig.ConnectionString, CommandType.Text, str.ToString(), null).ToString();
 				}
 				catch (Exception exception)
 				{
