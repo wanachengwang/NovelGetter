@@ -47,7 +47,7 @@ namespace MySql.Data.MySqlClient
 			ArrayList procData = this.GetProcData(connection, spName);
 			if (this.maxSize > 0)
 			{
-				if (this.procHash.get_Keys().get_Count() == this.maxSize)
+				if (this.procHash.get_Keys().Count == this.maxSize)
 				{
 					this.TrimHash();
 				}

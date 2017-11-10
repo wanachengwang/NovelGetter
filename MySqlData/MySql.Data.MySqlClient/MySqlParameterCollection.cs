@@ -35,7 +35,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this._parms.get_Count();
+				return this._parms.Count;
 			}
 		}
 
@@ -43,7 +43,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this._parms.get_IsSynchronized();
+				return this._parms.IsSynchronized;
 			}
 		}
 
@@ -51,7 +51,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this._parms.get_SyncRoot();
+				return this._parms.SyncRoot;
 			}
 		}
 
@@ -59,7 +59,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this._parms.get_IsFixedSize();
+				return this._parms.IsFixedSize;
 			}
 		}
 
@@ -67,7 +67,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this._parms.get_IsReadOnly();
+				return this._parms.IsReadOnly;
 			}
 		}
 
@@ -136,7 +136,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return (MySqlParameter)this._parms.get_Item(this.InternalIndexOf(name));
+				return (MySqlParameter)this._parms[this.InternalIndexOf(name)];
 			}
 			set
 			{
@@ -181,7 +181,7 @@ namespace MySql.Data.MySqlClient
 			{
 				while (enumerator.MoveNext())
 				{
-					MySqlParameter mySqlParameter = (MySqlParameter)enumerator.get_Current();
+					MySqlParameter mySqlParameter = (MySqlParameter)enumerator.Current;
 					mySqlParameter.Collection = null;
 				}
 			}
@@ -259,7 +259,7 @@ namespace MySql.Data.MySqlClient
 			}
 			if (this.returnParameterIndex != -1)
 			{
-				MySqlParameter mySqlParameter = (MySqlParameter)this._parms.get_Item(this.returnParameterIndex);
+				MySqlParameter mySqlParameter = (MySqlParameter)this._parms[this.returnParameterIndex];
 				if (string.Compare(parameterName, mySqlParameter.ParameterName, true) == 0)
 				{
 					return this.returnParameterIndex;
@@ -294,7 +294,7 @@ namespace MySql.Data.MySqlClient
 			{
 				text = text.Substring(1, text.Length - 1);
 			}
-			for (int i = 0; i < this._parms.get_Count(); i++)
+			for (int i = 0; i < this._parms.Count; i++)
 			{
 				MySqlParameter mySqlParameter = (MySqlParameter)this._parms[i];
 				string text2 = mySqlParameter.ParameterName.ToLower();

@@ -38,8 +38,8 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				int num = this.idlePool.get_Count() + this.inUsePool.get_Count();
-				return this.idlePool.get_Count() == 0 || num < this.minSize;
+				int num = this.idlePool.Count + this.inUsePool.Count;
+				return this.idlePool.Count == 0 || num < this.minSize;
 			}
 		}
 
@@ -55,7 +55,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this.idlePool.get_Count() > 0;
+				return this.idlePool.Count > 0;
 			}
 		}
 
@@ -63,7 +63,7 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return this.inUsePool.get_Count() + this.idlePool.get_Count() != this.maxSize;
+				return this.inUsePool.Count + this.idlePool.Count != this.maxSize;
 			}
 		}
 

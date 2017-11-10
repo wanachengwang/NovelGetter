@@ -277,7 +277,7 @@ namespace MySql.Data.MySqlClient
 				}
 				mySqlDataReader.Close();
 				this.hasWarnings = false;
-				if (arrayList.get_Count() != 0)
+				if (arrayList.Count != 0)
 				{
 					MySqlInfoMessageEventArgs mySqlInfoMessageEventArgs = new MySqlInfoMessageEventArgs();
 					mySqlInfoMessageEventArgs.errors = (MySqlError[])arrayList.ToArray(typeof(MySqlError));

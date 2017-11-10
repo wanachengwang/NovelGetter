@@ -10,11 +10,11 @@ namespace MySql.Data.MySqlClient
 		{
 			get
 			{
-				return (MySqlCommand)base.get_Command();
+				return (MySqlCommand)base.Command;
 			}
 			set
 			{
-				base.set_Command(value);
+				base.Command = (value);
 			}
 		}
 

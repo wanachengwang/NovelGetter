@@ -250,7 +250,7 @@ namespace MySql.Data.MySqlClient
 			CommandResult commandResult = null;
 			if (this.preparedStatement == null)
 			{
-				if (this.sqlBuffers == null || this.sqlBuffers.get_Count() == 0)
+				if (this.sqlBuffers == null || this.sqlBuffers.Count == 0)
 				{
 					return null;
 				}
@@ -273,7 +273,7 @@ namespace MySql.Data.MySqlClient
 			}
 			else
 			{
-				while (this.sqlBuffers.get_Count() > 0)
+				while (this.sqlBuffers.Count > 0)
 				{
 					MemoryStream memoryStream = (MemoryStream)this.sqlBuffers[0];
 					using (memoryStream)
@@ -574,7 +574,7 @@ namespace MySql.Data.MySqlClient
 			{
 				while (enumerator.MoveNext())
 				{
-					string text = (string)enumerator.get_Current();
+					string text = (string)enumerator.Current;
 					if (text.Trim().Length != 0)
 					{
 						if (text == ";" && !this.connection.driver.SupportsBatch)
@@ -612,7 +612,7 @@ namespace MySql.Data.MySqlClient
 			{
 				while (enumerator.MoveNext())
 				{
-					string text2 = (string)enumerator.get_Current();
+					string text2 = (string)enumerator.Current;
 					if (text2[0] != this.parameters.ParameterMarker)
 					{
 						stringBuilder.Append(text2);
@@ -697,7 +697,7 @@ namespace MySql.Data.MySqlClient
 			{
 				while (enumerator.MoveNext())
 				{
-					MySqlParameter mySqlParameter = (MySqlParameter)enumerator.get_Current();
+					MySqlParameter mySqlParameter = (MySqlParameter)enumerator.Current;
 					mySqlCommand.Parameters.Add(mySqlParameter.Clone());
 				}
 			}

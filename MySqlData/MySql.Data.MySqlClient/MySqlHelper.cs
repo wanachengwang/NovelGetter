@@ -46,11 +46,11 @@ namespace MySql.Data.MySqlClient
 			{
 				return null;
 			}
-			if (dataSet.get_Tables().get_Count() == 0)
+			if (dataSet.get_Tables().Count == 0)
 			{
 				return null;
 			}
-			if (dataSet.get_Tables()[0].get_Rows().get_Count() == 0)
+			if (dataSet.get_Tables()[0].get_Rows().Count == 0)
 			{
 				return null;
 			}
