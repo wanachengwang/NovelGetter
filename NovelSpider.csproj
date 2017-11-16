@@ -99,6 +99,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MySql.Data.MySqlClient\Resources.cs" />
+    <EmbeddedResource Include="MySql.Data.MySqlClient\Resources.resx">
+      <DependentUpon>Resources.cs</DependentUpon>
+    </EmbeddedResource>
     <Compile Include="NovelSpider\Localization.cs" />
     <Compile Include="Class17.cs">
       <AutoGen>false</AutoGen>
@@ -366,7 +370,6 @@
     <Compile Include="MySql.Data.MySqlClient\PacketWriter.cs" />
     <Compile Include="MySql.Data.MySqlClient\PreparedStatement.cs" />
     <Compile Include="MySql.Data.MySqlClient\ProcedureCache.cs" />
-    <Compile Include="MySql.Data.MySqlClient\Resources.cs" />
     <Compile Include="MySql.Data.MySqlClient\ServerStatusFlags.cs" />
     <Compile Include="MySql.Data.MySqlClient\SharedMemoryStream.cs" />
     <Compile Include="MySql.Data.MySqlClient\StoredProcedure.cs" />
