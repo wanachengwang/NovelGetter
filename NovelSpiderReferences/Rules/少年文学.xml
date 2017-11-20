@@ -1,0 +1,686 @@
+<?xml version="1.0"?>
+<RuleConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <RuleVersion>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>213</Pattern>
+    <RegexName>RuleVersion</RegexName>
+  </RuleVersion>
+  <RuleID>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>1</Pattern>
+    <RegexName>RuleID</RegexName>
+  </RuleID>
+  <GetSiteName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com</Pattern>
+    <RegexName>GetSiteName</RegexName>
+  </GetSiteName>
+  <GetSiteCharset>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>gbk</Pattern>
+    <RegexName>GetSiteCharset</RegexName>
+  </GetSiteCharset>
+  <GetSiteUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com</Pattern>
+    <RegexName>GetSiteUrl</RegexName>
+  </GetSiteUrl>
+  <NovelSearchUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchUrl</RegexName>
+  </NovelSearchUrl>
+  <NovelSearchData>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearchData</RegexName>
+  </NovelSearchData>
+  <NovelSearch_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelSearch_GetNovelKey</RegexName>
+  </NovelSearch_GetNovelKey>
+  <NovelListUrl>
+    <FilterPattern />
+    <Method>Matches</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com/modules/article/articlelist.php?page=1
+http://www.snwx.com/modules/article/toplist.php?stor=masterupdate&amp;page=1
+http://www.snwx.com/toplastupdate/1.html</Pattern>
+    <RegexName>NovelListUrl</RegexName>
+  </NovelListUrl>
+  <NovelList_GetNovelKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;span class="s2"&gt;&lt;a href="http://www.snwx.com/book/\d*/(\d*)/"&gt;(.+?)&lt;/a&gt;&lt;/span&gt;&lt;span class="s3"&gt;</Pattern>
+    <RegexName>NovelList_GetNovelKey</RegexName>
+  </NovelList_GetNovelKey>
+  <NovelUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com/book/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>NovelUrl</RegexName>
+  </NovelUrl>
+  <NovelErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>对不起，该文章不存在</Pattern>
+    <RegexName>NovelErr</RegexName>
+  </NovelErr>
+  <NovelName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>var booktitle = "(.+?)"</Pattern>
+    <RegexName>NovelName</RegexName>
+  </NovelName>
+  <NovelAuthor>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;i&gt;作者：(.+?)&lt;/i&gt;</Pattern>
+    <RegexName>NovelAuthor</RegexName>
+  </NovelAuthor>
+  <LagerSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;i&gt;类别：(.+?)&lt;/i&gt;</Pattern>
+    <RegexName>LagerSort</RegexName>
+  </LagerSort>
+  <SmallSort>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;i&gt;类别：(.+?)&lt;/i&gt;</Pattern>
+    <RegexName>SmallSort</RegexName>
+  </SmallSort>
+  <NovelIntro>
+    <FilterPattern>&lt;/div&gt;
+&lt;p&gt;各位书友要.+?和微博里的朋友推荐哦！&lt;/p&gt;
+&lt;/p&gt;
+\&lt;.+?\&gt;
+&lt;br&gt;&lt;/div&gt;
+&lt;br&gt;&amp;nbsp;
+(?i)[a-z0-9]+。(?i)(cOM)♂
+(?i)[a-z0-9]+。(?i)(cn)♂
+(?i)[a-z0-9]+。(?i)(net)♂
+(?i)[a-z0-9]+。(?i)(org)♂
+(?i)[a-z0-9]+。(?i)(Com.cn)♂
+(?i)[a-z0-9]+。(?i)(cn.cn)♂
+(?i)[a-z0-9]+。(?i)(net.cn)♂
+(?i)[a-z0-9]+。(?i)(org.cn)♂
+(?i)[a-z0-9]+。(?i)(cc)♂
+(?i)[a-z0-9]+。(?i)(gg)♂
+&lt;br&gt;♂&lt;br /&gt;
+诺书网
+免费小说手打网
+\&lt;!-- 作者有话说 --\&gt;
+\&lt;!-- 0116增加踩顶按钮 --\&gt;
+&lt;/div&gt;
+&lt;p&gt;各位书友要.+?和微博里的朋友推荐哦！&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+\&lt;.+?\&gt;
+javascript:share.+?content:'♂
+&lt;/div&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tbody&gt;
+&lt;/tr&gt;
+&lt;br/&gt;
+&lt;tr&gt;
+ㄧ|１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ|З|з♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+б|６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+⑩|⑽|⒑♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+都市♂笔趣阁http://www.sbiquge.com
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+神魔♂http://www.szxs8.com
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１０|⑩|㈩|⑽|⒑♂10
+０♂0
+．♂.
+Q|ｑ|Ｑ♂q
+W|ｗ|Ｗ♂w
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+１０|⑩|㈩|⑽|⒑|Ⅹ|ⅹ♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+好看♂666文学http://www.666wx.cc
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１|①|⑴|⒈|㈠♂1
+２|②|⑵|⒉|㈡♂2
+３|③|⑶|⒊|З|з|㈢♂3
+４|④|⑷|⒋|㈣♂4
+５|⑤|⑸|⒌|㈤♂5
+６|⑥|⑹|⒍|б|㈥♂6
+７|⑦|⑺|⒎|㈦♂7
+８|⑧|⑻|⒏|㈧♂8
+９|⑨|⑼|⒐|㈨♂9
+０♂0
+⑩|⑽|⒑♂10
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+&amp;#12304;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#26356;&amp;#26032;&amp;#32593;&amp;#31449;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#32;&amp;#25110;&amp;#32773;&amp;#30334;&amp;#24230;&amp;#36755;&amp;#20837;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#32593;&amp;#31449;&amp;#72;&amp;#84;&amp;#84;&amp;#80;&amp;#58;&amp;#47;&amp;#47;&amp;#87;&amp;#87;&amp;#87;&amp;#46;&amp;#89;&amp;#85;&amp;#78;&amp;#76;&amp;#65;&amp;#73;&amp;#71;&amp;#69;&amp;#46;&amp;#67;&amp;#79;&amp;#77;&amp;#65292;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#25628;&amp;#32034;&amp;#20113;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#30475;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#30340;&amp;#86;&amp;#73;&amp;#80;&amp;#31456;&amp;#33410;&amp;#25110;&amp;#30452;&amp;#25509;&amp;#35775;&amp;#38382;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#38642;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#20813;&amp;#36153;&amp;#38405;&amp;#35835;&amp;#26412;&amp;#20070;&amp;#30340;&amp;#26368;&amp;#26032;&amp;#118;&amp;#105;&amp;#112;&amp;#31456;&amp;#33410;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#32593;&amp;#31449;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#65292;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#25628;&amp;#32034;&amp;#20113;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#30475;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#30340;&amp;#86;&amp;#73;&amp;#80;&amp;#31456;&amp;#33410;&amp;#65292;&amp;#25110;&amp;#30452;&amp;#25509;&amp;#35775;&amp;#38382;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#26356;&amp;#26032;&amp;#22320;&amp;#22336;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#23567;&amp;#35828;&amp;#32593;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#20113;&amp;#26469;&amp;#38307;♂&amp;#31070;&amp;#20316;
+&amp;#20113;&amp;#26469;&amp;#38401;♂&amp;#31070;&amp;#20316;
+&amp;#38642;&amp;#26469;&amp;#38307;♂&amp;#31070;&amp;#20316;
+&amp;#38642;&amp;#26469;&amp;#38401;♂&amp;#31070;&amp;#20316;
+&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;♂&amp;#115;&amp;#122;&amp;#120;&amp;#115;&amp;#56;
+&amp;#89;&amp;#85;&amp;#78;&amp;#76;&amp;#65;&amp;#73;&amp;#71;&amp;#69;♂&amp;#115;&amp;#122;&amp;#120;&amp;#115;&amp;#56;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div class="intro"&gt;((.|\n)+?)&lt;/div&gt;</Pattern>
+    <RegexName>NovelIntro</RegexName>
+  </NovelIntro>
+  <NovelKeyword>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelKeyword</RegexName>
+  </NovelKeyword>
+  <NovelDegree>
+    <FilterPattern>a♂已完成
+b♂连载中</FilterPattern>
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;i&gt;状态：(.+?)&lt;/i&gt;
+</Pattern>
+    <RegexName>NovelDegree</RegexName>
+  </NovelDegree>
+  <NovelCover>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;div id="fmimg"&gt;&lt;img alt=".+?" src="(.+?)"</Pattern>
+    <RegexName>NovelCover</RegexName>
+  </NovelCover>
+  <NovelDefaultCoverUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>nocover.jpg</Pattern>
+    <RegexName>NovelDefaultCoverUrl</RegexName>
+  </NovelDefaultCoverUrl>
+  <NovelInfo_GetNovelPubKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>NovelInfo_GetNovelPubKey</RegexName>
+  </NovelInfo_GetNovelPubKey>
+  <PubCookies>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubCookies</RegexName>
+  </PubCookies>
+  <PubIndexUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com/book/{NovelKey/1000}/{NovelKey}/</Pattern>
+    <RegexName>PubIndexUrl</RegexName>
+  </PubIndexUrl>
+  <PubIndexErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubIndexErr</RegexName>
+  </PubIndexErr>
+  <PubVolumeContent>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubVolumeContent</RegexName>
+  </PubVolumeContent>
+  <PubVolumeSplit>
+    <FilterPattern />
+    <Method>Spilt</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dt&gt;</Pattern>
+    <RegexName>PubVolumeSplit</RegexName>
+  </PubVolumeSplit>
+  <PubVolumeName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>《.+?》(.+?)&lt;/dt&gt;</Pattern>
+    <RegexName>PubVolumeName</RegexName>
+  </PubVolumeName>
+  <PubChapterName>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="\d*.html" title="(.+?)"&gt;</Pattern>
+    <RegexName>PubChapterName</RegexName>
+  </PubChapterName>
+  <PubChapter_GetChapterKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;dd&gt;&lt;a href="(\d*).html" title=".+?"&gt;</Pattern>
+    <RegexName>PubChapter_GetChapterKey</RegexName>
+  </PubChapter_GetChapterKey>
+  <PubContentUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>http://www.snwx.com/book/{NovelKey/1000}/{NovelKey}/{ChapterKey}.html</Pattern>
+    <RegexName>PubContentUrl</RegexName>
+  </PubContentUrl>
+  <PubContentErr>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>这里必须填写</Pattern>
+    <RegexName>PubContentErr</RegexName>
+  </PubContentErr>
+  <PubContent_GetTextKey>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContent_GetTextKey</RegexName>
+  </PubContent_GetTextKey>
+  <PubTextUrl>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubTextUrl</RegexName>
+  </PubTextUrl>
+  <PubContentText>
+    <FilterPattern>&lt;/div&gt;
+&lt;p&gt;各位书友要.+?和微博里的朋友推荐哦！&lt;/p&gt;
+&lt;/p&gt;
+\&lt;.+?\&gt;
+&lt;br&gt;&lt;/div&gt;
+&lt;br&gt;&amp;nbsp;
+(?i)[a-z0-9]+。(?i)(cOM)♂
+(?i)[a-z0-9]+。(?i)(cn)♂
+(?i)[a-z0-9]+。(?i)(net)♂
+(?i)[a-z0-9]+。(?i)(org)♂
+(?i)[a-z0-9]+。(?i)(Com.cn)♂
+(?i)[a-z0-9]+。(?i)(cn.cn)♂
+(?i)[a-z0-9]+。(?i)(net.cn)♂
+(?i)[a-z0-9]+。(?i)(org.cn)♂
+(?i)[a-z0-9]+。(?i)(cc)♂
+(?i)[a-z0-9]+。(?i)(gg)♂
+&lt;br&gt;♂&lt;br /&gt;
+诺书网
+免费小说手打网
+\&lt;!-- 作者有话说 --\&gt;
+\&lt;!-- 0116增加踩顶按钮 --\&gt;
+&lt;/div&gt;
+&lt;p&gt;各位书友要.+?和微博里的朋友推荐哦！&lt;/p&gt;
+&lt;/p&gt;
+&lt;p&gt;
+\&lt;.+?\&gt;
+javascript:share.+?content:'♂
+&lt;/div&gt;
+&lt;/table&gt;
+&lt;/td&gt;
+&lt;/tbody&gt;
+&lt;/tr&gt;
+&lt;br/&gt;
+&lt;tr&gt;
+ㄧ|１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ|З|з♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+б|６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+⑩|⑽|⒑♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+神啊♂笔趣阁http://www.sbiquge.com
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+神魔♂http://www.szxs8.com
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１０|⑩|㈩|⑽|⒑♂10
+０♂0
+．♂.
+Q|ｑ|Ｑ♂q
+W|ｗ|Ｗ♂w
+E|ｅ|Ｅ♂e
+R|ｒ|Ｒ♂r
+T|ｔ|Ｔ♂t
+Y|ｙ|Ｙ♂y
+U|ｕ|Ｕ♂u
+I|ｉ|Ｉ♂i
+O|ｏ|Ｏ♂o
+P|ｐ|Ｐ♂p
+A|ａ|Ａ♂a
+S|ｓ|Ｓ♂s
+D|ｄ|Ｄ♂d
+F|ｆ|Ｆ♂f
+G|ｇ|Ｇ♂g
+H|ｈ|Ｈ♂h
+J|ｊ|Ｊ♂j
+K|ｋ|Ｋ♂k
+L|ｌ|Ｌ♂l
+Z|ｚ|Ｚ♂z
+X|ｘ|Ｘ♂x
+C|ｃ|Ｃ♂c
+V|ｖ|Ｖ♂v
+B|ｂ|Ｂ♂b
+N|ｎ|Ｎ♂n
+M|ｍ|Ｍ♂m
+１|①|㈠|⑴|⒈|Ⅰ|ⅰ♂1
+２|②|㈡|⑵|⒉|Ⅱ|ⅱ♂2
+３|③|㈢|⑶|⒊|Ⅲ|ⅲ♂3
+４|④|㈣|⑷|⒋|Ⅳ|ⅳ♂4
+５|⑤|㈤|⑸|⒌|Ⅴ|ⅴ♂5
+６|ⅵ|Ⅵ|⒍|⑹|㈥|⑥♂6
+７|⑦|㈦|⑺|⒎|Ⅶ|ⅶ♂7
+８|⑧|㈧|⑻|⒏|Ⅷ|ⅷ♂8
+９|ⅸ|Ⅸ|⒐|⑼|㈨|⑨♂9
+１０|⑩|㈩|⑽|⒑|Ⅹ|ⅹ♂10
+а|ａ♂a
+℃|С|с|Ｃ|ｃ♂c
+C|℃|С|с|Ｃ|ｃ♂c
+D|Ｄ|ｄ♂d
+E|Ё|ё|Е|е|Ε|ε|Ｅ|ｅ♂e
+F|℉|Ｆ|ｆ♂f
+G|ɡ|Ｇ|ｇ♂g
+H|Н|н|Η|Ｈ|ｈ♂h
+I|ì|í|ī|ǐ|∣|Ⅰ|ⅰ|Ι|ι|Ｉ|ｉ♂i
+J|Ｊ|ｊ♂j
+K|К|к|Κ|κ|Ｋ|ｋ♂k
+L|Ｌ|ｌ♂l
+M||М|м|Μ|Ｍ|ｍ♂m
+N||ń|ň|∏|∩|И|и|Й|й|Ν|Ｎ|ｎ♂n
+好看♂好看的666文学http://www.666wx.cc
+O|ò|ó|ō|ǒ|О|о|Ο|ο|Ｏ|ｏ♂o
+P|Р|р|Ρ|p|ρ|Ｐ|ｐ|p♂p
+Q|Ｑ|ｑ♂q
+R|Я|я|Ｒ|ｒ♂r
+S|Ｓ|ｓ♂s
+T|Т|т|Τ|τ|Ｔ|ｔ♂t
+U|ū|ú|ǔ|ù|ǖ|ǘ|ǚ|ǜ|ü|∪|υ|Ｕ|ｕ♂u
+V|Ⅴ|∨|ˇ|Ｖ|ｖ♂v
+W|ω|w|w|Ｗ|ｗ♂w
+X|×|Ⅹ|ⅹ|Х|х|Χ|χ|Ｘ|ｘ♂x
+Y|У|у|Ｙ|ｙ♂y
+Z|Ζ|Ｚ|ｚ♂z
+１|①|⑴|⒈|㈠♂1
+２|②|⑵|⒉|㈡♂2
+３|③|⑶|⒊|З|з|㈢♂3
+４|④|⑷|⒋|㈣♂4
+５|⑤|⑸|⒌|㈤♂5
+６|⑥|⑹|⒍|б|㈥♂6
+７|⑦|⑺|⒎|㈦♂7
+８|⑧|⑻|⒏|㈧♂8
+９|⑨|⑼|⒐|㈨♂9
+０♂0
+⑩|⑽|⒑♂10
+⑾|⒒♂11
+⑿|⒓♂12
+⒀|⒔♂13
+⒁|⒕♂14
+⒂|⒖♂15
+⒃|⒗♂16
+⒄|⒘♂17
+⒅|⒙♂18
+⒆|⒚♂19
+⒇|⒛♂20
+&amp;#12304;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#26356;&amp;#26032;&amp;#32593;&amp;#31449;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#32;&amp;#25110;&amp;#32773;&amp;#30334;&amp;#24230;&amp;#36755;&amp;#20837;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#32593;&amp;#31449;&amp;#72;&amp;#84;&amp;#84;&amp;#80;&amp;#58;&amp;#47;&amp;#47;&amp;#87;&amp;#87;&amp;#87;&amp;#46;&amp;#89;&amp;#85;&amp;#78;&amp;#76;&amp;#65;&amp;#73;&amp;#71;&amp;#69;&amp;#46;&amp;#67;&amp;#79;&amp;#77;&amp;#65292;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#25628;&amp;#32034;&amp;#20113;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#30475;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#30340;&amp;#86;&amp;#73;&amp;#80;&amp;#31456;&amp;#33410;&amp;#25110;&amp;#30452;&amp;#25509;&amp;#35775;&amp;#38382;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#38642;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#20813;&amp;#36153;&amp;#38405;&amp;#35835;&amp;#26412;&amp;#20070;&amp;#30340;&amp;#26368;&amp;#26032;&amp;#118;&amp;#105;&amp;#112;&amp;#31456;&amp;#33410;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#32593;&amp;#31449;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#65292;&amp;#30334;&amp;#24230;&amp;#30452;&amp;#25509;&amp;#25628;&amp;#32034;&amp;#20851;&amp;#38190;&amp;#35789;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#20316;&amp;#32773;&amp;#25512;&amp;#33616;&amp;#65306;&amp;#30334;&amp;#24230;&amp;#25628;&amp;#32034;&amp;#20113;&amp;#26469;&amp;#38307;&amp;#65292;&amp;#30475;&amp;#26412;&amp;#20070;&amp;#26368;&amp;#24555;&amp;#30340;&amp;#86;&amp;#73;&amp;#80;&amp;#31456;&amp;#33410;&amp;#65292;&amp;#25110;&amp;#30452;&amp;#25509;&amp;#35775;&amp;#38382;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#12304;&amp;#26412;&amp;#20070;&amp;#39318;&amp;#21457;&amp;#26356;&amp;#26032;&amp;#22320;&amp;#22336;&amp;#104;&amp;#116;&amp;#116;&amp;#112;&amp;#58;&amp;#47;&amp;#47;&amp;#119;&amp;#119;&amp;#119;&amp;#46;&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;&amp;#46;&amp;#99;&amp;#111;&amp;#109;&amp;#32;&amp;#20113;&amp;#26469;&amp;#38401;&amp;#23567;&amp;#35828;&amp;#32593;&amp;#12305;♂&amp;#26356;&amp;#26032;&amp;#26368;&amp;#24555;&amp;#23601;&amp;#22312;&amp;#31070;&amp;#20316;&amp;#23567;&amp;#35828;&amp;#38405;&amp;#35835;&amp;#32593;
+&amp;#20113;&amp;#26469;&amp;#38307;♂&amp;#31070;&amp;#20316;
+&amp;#20113;&amp;#26469;&amp;#38401;♂&amp;#31070;&amp;#20316;
+&amp;#38642;&amp;#26469;&amp;#38307;♂&amp;#31070;&amp;#20316;
+&amp;#38642;&amp;#26469;&amp;#38401;♂&amp;#31070;&amp;#20316;
+&amp;#121;&amp;#117;&amp;#110;&amp;#108;&amp;#97;&amp;#105;&amp;#103;&amp;#101;♂&amp;#115;&amp;#122;&amp;#120;&amp;#115;&amp;#56;
+&amp;#89;&amp;#85;&amp;#78;&amp;#76;&amp;#65;&amp;#73;&amp;#71;&amp;#69;♂&amp;#115;&amp;#122;&amp;#120;&amp;#115;&amp;#56;</FilterPattern>
+    <Method>Match</Method>
+    <Options>IgnoreCase</Options>
+    <Pattern>&lt;div id="BookText"&gt;((.|\n)+?)&lt;div class="sharex"&gt;</Pattern>
+    <RegexName>PubContentText</RegexName>
+  </PubContentText>
+  <PubContentReplace>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern />
+    <RegexName>PubContentReplace</RegexName>
+  </PubContentReplace>
+  <PubContentImages>
+    <FilterPattern />
+    <Method>Match</Method>
+    <Options>None</Options>
+    <Pattern>&lt;[^&lt;]*((?&lt;=&lt;(?:img|IMG)[^&gt;]*(?:(?:src|SRC)(?:\s*=\s*(?:["']?))))(?:[^\s"'&gt;]*)\.(?:jpg|gif|jpeg|bmp|png|GIF|JPG))[^&gt;]*&gt;</Pattern>
+    <RegexName>PubContentImages</RegexName>
+  </PubContentImages>
+</RuleConfigInfo>
