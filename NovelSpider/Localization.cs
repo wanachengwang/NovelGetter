@@ -1,4 +1,5 @@
-﻿using System;
+﻿//#define USE_I18N
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Text;
@@ -39,6 +40,7 @@ namespace NovelSpider
 
         static Localization()
         {
+#if USE_I18N
             _bNoUseI18N = File.Exists(_noUseI18N);
             try {
                 string strXml = File.ReadAllText(_i18nFilePathName);
@@ -59,10 +61,12 @@ namespace NovelSpider
             } catch(Exception e) {
                 _strError = e.ToString();
             }
+#endif
         }
         private static int _idxStr = 0;
         public static string Get(string key)
         {
+#if USE_I18N
             if (_strTable.ContainsKey(key)) {
                 return _bNoUseI18N ? key : _strTable[key];
             } else {
@@ -72,6 +76,9 @@ namespace NovelSpider
                 _strTable[key] = str;
                 return _bNoUseI18N ? key : str;
             }
+#else
+            return key;
+#endif
         }
         public static void Refresh()
         {

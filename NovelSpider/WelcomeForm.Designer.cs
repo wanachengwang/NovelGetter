@@ -1,3 +1,4 @@
+//#define FONT_SELECT
 using NovelSpider.Config;
 using System;
 using System.ComponentModel;
@@ -14,10 +15,12 @@ namespace NovelSpider
 
 		private Label label_0;
 
+#if FONT_SELECT
         private ComboBox comboFontSelect;
         private Button btnFontSelect;
+#endif
 
-		private Panel panel_0;
+        private Panel panel_0;
 
 		private WebBrowser webBwr;
 
@@ -41,26 +44,18 @@ namespace NovelSpider
 			ComponentResourceManager componentResourceManager = new ComponentResourceManager(typeof(WelcomeForm));
 			this.panel_0 = new Panel();
 			this.label_0 = new Label();
-            this.comboFontSelect = new ComboBox();
-            this.btnFontSelect = new Button();
 			this.webBwr = new WebBrowser();
 			this.panel_0.SuspendLayout();
 			base.SuspendLayout();
 			this.panel_0.Controls.Add(this.label_0);
+
+            int hPanel = 24;
+#if FONT_SELECT
+            this.comboFontSelect = new ComboBox();
+            this.btnFontSelect = new Button();
             this.panel_0.Controls.Add(this.comboFontSelect);
             this.panel_0.Controls.Add(this.btnFontSelect);
-            this.panel_0.Dock = DockStyle.Top;
-			this.panel_0.Location = new Point(0, 0);
-			this.panel_0.Name = "panel_0";
-			this.panel_0.Size = new System.Drawing.Size(584, 54);
-			this.panel_0.TabIndex = 0;
-			this.label_0.AutoSize = true;
-			this.label_0.Location = new Point(12, 9);
-			this.label_0.Name = "label_0";
-			this.label_0.Size = new System.Drawing.Size(305, 12);
-			this.label_0.TabIndex = 0;
-			this.label_0.Text = Localization.Get("本软件只为替代用户重复手工劳动。严禁用于非法转载。");
-            
+
             System.Drawing.Text.InstalledFontCollection fonts = new System.Drawing.Text.InstalledFontCollection();
             bool bPrevFontExist = false;
             foreach (System.Drawing.FontFamily ff in fonts.Families) {
@@ -81,10 +76,23 @@ namespace NovelSpider
             this.btnFontSelect.Text = "OK";
             this.btnFontSelect.Font = new System.Drawing.Font(Localization.Font, 9f, FontStyle.Bold, GraphicsUnit.Point, 134);
             this.btnFontSelect.Click += (a, b) => Localization.Font = this.comboFontSelect.Text;
+            hPanel += 30;
+#endif
+            this.panel_0.Dock = DockStyle.Top;
+			this.panel_0.Location = new Point(0, 0);
+			this.panel_0.Name = "panel_0";
+			this.panel_0.Size = new System.Drawing.Size(584, hPanel);
+			this.panel_0.TabIndex = 0;
+			this.label_0.AutoSize = true;
+			this.label_0.Location = new Point(12, 9);
+			this.label_0.Name = "label_0";
+			this.label_0.Size = new System.Drawing.Size(305, 12);
+			this.label_0.TabIndex = 0;
+			this.label_0.Text = Localization.Get("本软件只为替代用户重复手工劳动。严禁用于非法转载。");
 
             this.webBwr.Dock = DockStyle.Fill;
-			this.webBwr.Location = new Point(0, 54);
-			this.webBwr.MinimumSize = new System.Drawing.Size(20, 20);
+			this.webBwr.Location = new Point(0, hPanel);
+            this.webBwr.MinimumSize = new System.Drawing.Size(20, 20);
 			this.webBwr.Name = "webBwr";
 			this.webBwr.Size = new System.Drawing.Size(584, 262);
 			this.webBwr.TabIndex = 3;
